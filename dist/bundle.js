@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nfunction component() {\n\tconst element = document.createElement(\"div\");\n\n\t// Lodash, currently included via a script, is required for this line to work\n\t// Lodash, now imported by this script\n\telement.innerHTML = \"Hello\";\n\telement.classList.add(\"hello\");\n\n\treturn element;\n}\n\ndocument.body.appendChild(component());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nfunction component() {\n\tconst content = document.querySelector(\"content\");\n\tcontent.textContent = \"hello\";\n\treturn content;\n}\n\ndocument.body.appendChild(component());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
 
 /***/ })
 
