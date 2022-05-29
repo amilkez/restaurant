@@ -1,3 +1,43 @@
-.hello {
-	color: red;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	background-image: url("./background-main.jpg");
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(
+		circle,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.2) 50%,
+		rgba(0, 0, 0, 1) 100%
+	);
+}
+
+.h1 {
+	color: #fff;
+	text-align: center;
+}
+
+.headline {
+	color: rgb(224, 224, 224);
 }

@@ -1,9 +1,5 @@
-import "./style.css";
+import { component } from "./page-load.js";
 
-function component() {
-	const content = document.querySelector("#content");
-	content.textContent = "hello";
-	return content;
-}
+const content = document.querySelector("#content");
 
 document.body.appendChild(component());
