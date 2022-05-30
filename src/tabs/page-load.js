@@ -26,8 +26,20 @@ const Homepage = (() => {
 
 		const ul = document.createElement("ul");
 		const social1 = document.createElement("li");
+		const socialLink1 = document.createElement("a");
+		socialLink1.classList.add("fa-brands", "fa-twitter");
+		social1.appendChild(socialLink1);
+
 		const social2 = document.createElement("li");
+		const socialLink2 = document.createElement("a");
+		socialLink2.classList.add("fa-brands", "fa-instagram");
+		social2.appendChild(socialLink2);
+
 		const social3 = document.createElement("li");
+		const socialLink3 = document.createElement("a");
+		socialLink3.classList.add("fa-brands", "fa-facebook");
+		social3.appendChild(socialLink3);
+
 		ul.append(social1, social2, social3);
 
 		const table = document.createElement("table");
