@@ -55,7 +55,20 @@ const Homepage = (() => {
 		return footer;
 	};
 
-	return { createHeader, createFooter };
+	const cta = () => {
+		const div = document.createElement("div");
+
+		const h2 = document.createElement("h2");
+		h2.textContent = "Authentic Japanese cuisine and sushi";
+
+		const button = document.createElement("button");
+		button.textContent = "SEE OUR MENU";
+
+		div.append(h2, button);
+		return div;
+	};
+
+	return { createHeader, createFooter, cta };
 })();
 
 export { Homepage };
