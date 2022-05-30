@@ -1,5 +1,5 @@
-import { component } from "./tabs/page-load.js";
+import { Homepage } from "./tabs/page-load.js";
 
 const content = document.querySelector("#content");
 
-content.appendChild(component());
+content.appendChild(Homepage.createHeader());
