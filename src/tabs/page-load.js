@@ -3,27 +3,35 @@ import "../style.css";
 const Homepage = (() => {
 	const createHeader = () => {
 		const header = document.createElement("header");
+		header.classList.add("header");
 		const nav = document.createElement("nav");
+		nav.classList.add("nav");
 		const h1 = document.createElement("h1");
 		h1.textContent = "SUSHI-ON!";
 
 		const ul = document.createElement("ul");
+		ul.classList.add("nav-links");
+
 		const liHome = document.createElement("li");
+		liHome.classList.add("home");
 		const linkHome = document.createElement("a");
 		linkHome.textContent = "HOME";
 		liHome.appendChild(linkHome);
 
 		const liMenu = document.createElement("li");
+		liMenu.classList.add("menu");
 		const linkMenu = document.createElement("a");
 		linkMenu.textContent = "MENU";
 		liMenu.appendChild(linkMenu);
 
 		const liContact = document.createElement("li");
+		liContact.classList.add("contact");
 		const linkContact = document.createElement("a");
 		linkContact.textContent = "CONTACT";
 		liContact.appendChild(linkContact);
 
 		const liAbout = document.createElement("li");
+		liAbout.classList.add("about");
 		const linkAbout = document.createElement("a");
 		linkAbout.textContent = "ABOUT";
 		liAbout.appendChild(linkAbout);
@@ -38,9 +46,12 @@ const Homepage = (() => {
 	};
 
 	const createFooter = () => {
-		const footer = document.createElement("div");
+		const bottom = document.createElement("div");
+		bottom.classList.add("bottom");
 
 		const ul = document.createElement("ul");
+		ul.classList.add("social-links");
+
 		const social1 = document.createElement("li");
 		const socialLink1 = document.createElement("a");
 		socialLink1.classList.add("fa-brands", "fa-twitter");
@@ -59,6 +70,8 @@ const Homepage = (() => {
 		ul.append(social1, social2, social3);
 
 		const table = document.createElement("table");
+		table.classList.add("table");
+
 		const th = document.createElement("th");
 		th.textContent = "OPEN HOURS";
 
@@ -78,18 +91,27 @@ const Homepage = (() => {
 
 		table.append(th, tr1, tr2);
 
-		footer.append(ul, table);
+		const footer = document.createElement("footer");
+		footer.classList.add("footer");
+		const p = document.createElement("p");
+		p.textContent = "2022 Anethea";
+		footer.appendChild(p);
 
-		return footer;
+		bottom.append(ul, table, footer);
+
+		return bottom;
 	};
 
 	const cta = () => {
 		const div = document.createElement("div");
+		div.classList.add("main-content");
 
 		const h2 = document.createElement("h2");
+		h2.classList.add("h2");
 		h2.textContent = "Authentic Japanese cuisine and sushi";
 
 		const button = document.createElement("button");
+		button.classList.add("button");
 		button.textContent = "SEE OUR MENU";
 
 		div.append(h2, button);
