@@ -1,27 +1,2 @@
-"use strict";
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-(self["webpackChunkrestaurant"] = self["webpackChunkrestaurant"] || []).push([["index"],{
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './page-load.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nconst content = document.querySelector(\"#content\");\n\ncontent.appendChild(Object(function webpackMissingModule() { var e = new Error(\"Cannot find module './page-load.js'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())());\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?");
-
-/***/ })
-
-},
-/******/ __webpack_require__ => { // webpackRuntimeModules
-/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/index.js"));
-/******/ }
-]);
+"use strict";(self.webpackChunkrestaurant=self.webpackChunkrestaurant||[]).push([[826],{57:()=>{document.createElement("header");document.querySelector("#content").appendChild(function(){const e=document.createElement("div"),t=document.createElement("h1");t.classList.add("h1"),t.textContent="Sushi-on!";const n=document.createElement("p");return n.classList.add("headline"),n.textContent="The Edo Kobayashi Group was founded in 2013 with innovative creation based on Japanese food, introduced in the gastronomic scene of Mexico City. From the beginning – with the opening of its first restaurant, Rokai, the spaces of Edo Kobayashi have been characterized by the perfect balance between flavor and nutrition in Japanese culture.",e.appendChild(t),e.appendChild(n),e}())}},e=>{var t;t=57,e(e.s=t)}]);
+//# sourceMappingURL=index.bundle.js.map
