@@ -9,9 +9,25 @@ const Homepage = (() => {
 
 		const ul = document.createElement("ul");
 		const liHome = document.createElement("li");
+		const linkHome = document.createElement("a");
+		linkHome.textContent = "HOME";
+		liHome.appendChild(linkHome);
+
 		const liMenu = document.createElement("li");
+		const linkMenu = document.createElement("a");
+		linkMenu.textContent = "MENU";
+		liMenu.appendChild(linkMenu);
+
 		const liContact = document.createElement("li");
+		const linkContact = document.createElement("a");
+		linkContact.textContent = "CONTACT";
+		liContact.appendChild(linkContact);
+
 		const liAbout = document.createElement("li");
+		const linkAbout = document.createElement("a");
+		linkAbout.textContent = "ABOUT";
+		liAbout.appendChild(linkAbout);
+
 		ul.append(liHome, liMenu, liContact, liAbout);
 
 		nav.append(h1, ul);
