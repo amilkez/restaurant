@@ -31,13 +31,5 @@ body {
 		rgba(0, 0, 0, 0.2) 50%,
 		rgba(0, 0, 0, 1) 100%
 	);
-}
-
-.h1 {
 	color: #fff;
-	text-align: center;
-}
-
-.headline {
-	color: rgb(224, 224, 224);
 }

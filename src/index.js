@@ -2,4 +2,4 @@ import { Homepage } from "./tabs/page-load.js";
 
 const content = document.querySelector("#content");
 
-content.appendChild(Homepage.createHeader());
+content.append(Homepage.createHeader(), Homepage.createFooter());
