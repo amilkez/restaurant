@@ -130,7 +130,16 @@ body {
 	width: 100%;
 }
 
+.main-content.menu .section-heading,
+.main-content.menu .menu-heading {
+	display: inline;
+	padding: 0 1rem;
+	margin-bottom: 1rem;
+	border-bottom: 3px solid var(--text-color);
+}
+
 .rolls-container {
+	margin-top: 2rem;
 	display: grid;
 	width: 100%;
 	grid-template-columns: 1fr 1fr;
@@ -145,10 +154,11 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	align-items: center;
+	border-radius: 10px;
 }
 
 .menu-item img {
-	width: 100px;
+	width: 50px;
 }
 
 .menu-item p:first-of-type {
@@ -193,4 +203,92 @@ body {
 .history {
 	align-self: start;
 	margin-top: 3rem;
+}
+
+/* Main Content Contact */
+
+.main-content.contact {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-wrapper {
+	border-radius: 20px;
+	width: 500px;
+}
+
+.heading-wrapper {
+	margin: 1rem 0;
+}
+
+.heading-wrapper h2 {
+	display: inline;
+	padding: 0.2rem 2rem;
+	border-bottom: 5px solid var(--text-color);
+}
+
+.heading-wrapper p {
+	margin-top: 1.5rem;
+}
+
+.contact .form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 2fr;
+}
+
+.form-element {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem 2rem;
+	text-align: start;
+}
+
+.form-element label {
+	margin-bottom: 0.5rem;
+}
+
+.subject,
+.textarea {
+	grid-column: span 2;
+}
+
+.textarea textarea {
+	height: 5rem;
+	resize: none;
+}
+
+.form button {
+	grid-column: span 2;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 0.7rem;
+	background-color: var(--text-color);
+	border: none;
+	color: var(--main-color);
+	font-family: inherit;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	text-transform: uppercase;
+}
+
+.form button:hover {
+	cursor: pointer;
+	background-color: var(--text-link-hover);
+}
+
+/* Glossy effect */
+
+.contact-wrapper,
+.about-section,
+.menu-item {
+	background-color: hsla(240, 24%, 4%, 0.4);
+	backdrop-filter: saturate(180%) blur(10px);
+}
+
+.about-section {
+	padding: 1rem;
+	border-radius: 20px;
 }

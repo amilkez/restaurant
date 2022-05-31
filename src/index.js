@@ -24,14 +24,17 @@ function switchPage(e) {
 	if (tab.className.includes("about")) {
 		mainContent.innerHTML = "";
 		mainContent.classList.remove("contact", "home", "menu");
+		mainContent.classList.add("about");
 		mainContent.appendChild(About.createDiv());
 	} else if (tab.className.includes("contact")) {
 		mainContent.innerHTML = "";
 		mainContent.classList.remove("menu", "home", "about");
+		mainContent.classList.add("contact");
 		mainContent.appendChild(Contact.createDiv());
 	} else if (tab.className.includes("home")) {
 		mainContent.innerHTML = "";
 		mainContent.classList.remove("contact", "menu", "about");
+		mainContent.classList.add("home");
 		mainContent.appendChild(Homepage.cta());
 	} else if (tab.className.includes("menu")) {
 		mainContent.innerHTML = "";
