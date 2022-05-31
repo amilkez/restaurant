@@ -154,3 +154,43 @@ body {
 .menu-item p:first-of-type {
 	justify-self: start;
 }
+
+/* Main Content About */
+
+.main-content.about {
+	width: 100%;
+	height: 100%;
+}
+
+.about-wrapper {
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	height: 100%;
+}
+
+.about-section {
+	width: 350px;
+}
+
+.about-section > h2 {
+	display: inline;
+	padding: 0 1rem 0.2rem;
+	border-bottom: 5px solid var(--text-color);
+	margin-bottom: -5px;
+}
+
+.about-section p {
+	margin-top: 1.5rem;
+}
+
+.about-us {
+	grid-column: span 2;
+}
+
+.value,
+.history {
+	align-self: start;
+	margin-top: 3rem;
+}

@@ -23,15 +23,19 @@ function switchPage(e) {
 
 	if (tab.className.includes("about")) {
 		mainContent.innerHTML = "";
+		mainContent.classList.remove("contact", "home", "menu");
 		mainContent.appendChild(About.createDiv());
 	} else if (tab.className.includes("contact")) {
 		mainContent.innerHTML = "";
+		mainContent.classList.remove("menu", "home", "about");
 		mainContent.appendChild(Contact.createDiv());
 	} else if (tab.className.includes("home")) {
 		mainContent.innerHTML = "";
+		mainContent.classList.remove("contact", "menu", "about");
 		mainContent.appendChild(Homepage.cta());
 	} else if (tab.className.includes("menu")) {
 		mainContent.innerHTML = "";
+		mainContent.classList.remove("contact", "home", "about");
 		mainContent.classList.add("menu");
 		mainContent.appendChild(Menu.createDiv());
 	}
