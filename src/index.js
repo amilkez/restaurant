@@ -1,6 +1,7 @@
 import { Homepage } from "./tabs/page-load";
 import { About } from "./tabs/about";
 import { Contact } from "./tabs/contact";
+import { Menu } from "./tabs/menu";
 const content = document.querySelector("#content");
 
 content.append(
@@ -29,5 +30,8 @@ function switchPage(e) {
 	} else if (tab.className.includes("home")) {
 		mainContent.innerHTML = "";
 		mainContent.appendChild(Homepage.cta());
+	} else if (tab.className.includes("menu")) {
+		mainContent.innerHTML = "";
+		mainContent.appendChild(Menu.createDiv());
 	}
 }
