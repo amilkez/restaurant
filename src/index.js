@@ -1,5 +1,6 @@
 import { Homepage } from "./tabs/page-load";
 import { About } from "./tabs/about";
+import { Contact } from "./tabs/contact";
 const content = document.querySelector("#content");
 
 content.append(
@@ -21,7 +22,12 @@ function switchPage(e) {
 
 	if (tab.className.includes("about")) {
 		mainContent.innerHTML = "";
-
 		mainContent.appendChild(About.createDiv());
+	} else if (tab.className.includes("contact")) {
+		mainContent.innerHTML = "";
+		mainContent.appendChild(Contact.createDiv());
+	} else if (tab.className.includes("home")) {
+		mainContent.innerHTML = "";
+		mainContent.appendChild(Homepage.cta());
 	}
 }
