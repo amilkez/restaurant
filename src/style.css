@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Montserrat&display=swap");
+
+:root {
+	--text-color: hsl(0, 0%, 97%);
+	--text-link-hover: hsl(0, 0%, 89%);
+	--main-color: hsl(240, 24%, 4%);
+	--highlight: hsl(51, 99%, 68%);
+}
+
 *,
 *::after,
 *::before {
@@ -17,19 +26,100 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-color: var(--main-color);
+	color: var(--text-color);
 }
 
 #content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-rows: 5rem 3fr 1fr;
+	align-items: center;
+	padding: 0 5rem;
+	font-family: "Poppins", sans-serif;
 	background: radial-gradient(
 		circle,
 		rgba(0, 0, 0, 0) 0%,
-		rgba(0, 0, 0, 0.2) 50%,
-		rgba(0, 0, 0, 1) 100%
+		rgba(0, 0, 0, 0.7) 90%,
+		rgba(0, 0, 0, 0) 100%
 	);
-	color: #fff;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+}
+
+.nav-links {
+	display: flex;
+}
+
+.nav-links li {
+	padding: 0.8rem 0.5rem;
+	margin: 0 1rem;
+	list-style: none;
+}
+
+.nav-links li:hover {
+	cursor: pointer;
+	color: var(--text-link-hover);
+	border-bottom: 3px solid var(--text-link-hover);
+	margin-bottom: -3px;
+}
+
+/* Main Content */
+
+.main-content {
+	place-self: center;
+	text-align: center;
+}
+
+.main-content .button {
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	background-color: black;
+	color: var(--text-color);
+	border: 5px solid var(--text-color);
+	font-size: 1rem;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+}
+
+.main-content .button:hover {
+	cursor: pointer;
+	color: black;
+	background-color: white;
+	border-color: var(--text-link-hover);
+}
+
+/* Bottom Styles */
+
+.bottom {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.bottom .social-links li {
+	list-style-type: none;
+	font-size: 2rem;
+	margin: 1rem 0;
+}
+
+.bottom .table {
+	justify-self: end;
+}
+
+.bottom .table th {
+	height: 3rem;
+	text-align: center;
+	border-bottom: 3px solid var(--text-color);
+}
+
+.footer {
+	grid-column: span 2;
+	place-self: center;
 }

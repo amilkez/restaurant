@@ -6,6 +6,7 @@ const Homepage = (() => {
 		header.classList.add("header");
 		const nav = document.createElement("nav");
 		nav.classList.add("nav");
+
 		const h1 = document.createElement("h1");
 		h1.textContent = "SUSHI-ON!";
 
@@ -13,28 +14,20 @@ const Homepage = (() => {
 		ul.classList.add("nav-links");
 
 		const liHome = document.createElement("li");
-		liHome.classList.add("home");
-		const linkHome = document.createElement("a");
-		linkHome.textContent = "HOME";
-		liHome.appendChild(linkHome);
+		liHome.classList.add("home", "link");
+		liHome.textContent = "HOME";
 
 		const liMenu = document.createElement("li");
-		liMenu.classList.add("menu");
-		const linkMenu = document.createElement("a");
-		linkMenu.textContent = "MENU";
-		liMenu.appendChild(linkMenu);
+		liMenu.classList.add("menu", "link");
+		liMenu.textContent = "MENU";
 
 		const liContact = document.createElement("li");
-		liContact.classList.add("contact");
-		const linkContact = document.createElement("a");
-		linkContact.textContent = "CONTACT";
-		liContact.appendChild(linkContact);
+		liContact.classList.add("contact", "link");
+		liContact.textContent = "CONTACT";
 
 		const liAbout = document.createElement("li");
-		liAbout.classList.add("about");
-		const linkAbout = document.createElement("a");
-		linkAbout.textContent = "ABOUT";
-		liAbout.appendChild(linkAbout);
+		liAbout.classList.add("about", "link");
+		liAbout.textContent = "ABOUT";
 
 		ul.append(liHome, liMenu, liContact, liAbout);
 
@@ -73,6 +66,7 @@ const Homepage = (() => {
 		table.classList.add("table");
 
 		const th = document.createElement("th");
+		th.setAttribute("colspan", 2);
 		th.textContent = "OPEN HOURS";
 
 		const tr1 = document.createElement("tr");
