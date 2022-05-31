@@ -123,3 +123,34 @@ body {
 	grid-column: span 2;
 	place-self: center;
 }
+
+/* Main Content Menu */
+.main-content.menu,
+.main-content.menu > div {
+	width: 100%;
+}
+
+.rolls-container {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.rolls-container ul li {
+	list-style-type: none;
+}
+
+.menu-item {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+}
+
+.menu-item img {
+	width: 100px;
+}
+
+.menu-item p:first-of-type {
+	justify-self: start;
+}

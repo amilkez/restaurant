@@ -26,8 +26,9 @@ const Menu = (() => {
 		// FIRST MENU
 
 		const menuClassic = document.createElement("div");
-		menuClassic.classList.add("menu-classic", "menu");
+		menuClassic.classList.add("menu-classic");
 		const rollsContainer = document.createElement("div");
+		rollsContainer.classList.add("rolls-container");
 		const h3Classic = document.createElement("h3");
 		h3Classic.classList.add("menu-heading");
 		h3Classic.textContent = "CLASSIC ROLLS";
@@ -101,7 +102,7 @@ const Menu = (() => {
 		// SECOND MENU
 
 		const menuCalifornia = document.createElement("div");
-		menuCalifornia.classList.add("menu-california", "menu");
+		menuCalifornia.classList.add("menu-california");
 		const h3California = document.createElement("h3");
 		h3California.classList.add("menu-heading");
 
@@ -194,7 +195,7 @@ const Menu = (() => {
 		// THIRD MENU
 
 		const menuChipotle = document.createElement("div");
-		menuChipotle.classList.add("menu", "menu-chipotle");
+		menuChipotle.classList.add("menu-chipotle");
 		const h3Chipotle = document.createElement("h3");
 		h3Chipotle.classList.add("menu-heading");
 
@@ -270,7 +271,7 @@ const Menu = (() => {
 		// FOURTH MENU
 
 		const menuTampico = document.createElement("div");
-		menuTampico.classList.add("menu-tampico", "menu");
+		menuTampico.classList.add("menu-tampico");
 		const h3Tampico = document.createElement("h3");
 		h3Tampico.classList.add("menu-heading");
 		h3Tampico.textContent = "TAMPICO ROLLS";

@@ -32,6 +32,7 @@ function switchPage(e) {
 		mainContent.appendChild(Homepage.cta());
 	} else if (tab.className.includes("menu")) {
 		mainContent.innerHTML = "";
+		mainContent.classList.add("menu");
 		mainContent.appendChild(Menu.createDiv());
 	}
 }
