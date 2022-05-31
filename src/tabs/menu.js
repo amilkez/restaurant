@@ -1,27 +1,48 @@
+import Cheese from "../imgs/cheese.png";
+import Kiuri from "../imgs/kiuri.png";
+import Philadelphia from "../imgs/philadelphia.png";
+import Avocado from "../imgs/avocado.png";
+import BabyCali from "../imgs/baby-cali.png";
+import SuperCali from "../imgs/super-cali.png";
+import ThaiCali from "../imgs/thai-cali.png";
+import CaliSpecial from "../imgs/cali-special.png";
+import Mango from "../imgs/mango.png";
+import Godzilla from "../imgs/godzilla.png";
+import Spicy from "../imgs/spicy.png";
+import Volcan from "../imgs/volcan.png";
+import Banana from "../imgs/banana.png";
+import Tsunami from "../imgs/tsunami.png";
+import Geisha from "../imgs/geisha.png";
+import Tigre from "../imgs/tigre.png";
+
 const Menu = (() => {
 	const createDiv = () => {
 		const div = document.createElement("div");
 
 		const h2Menu = document.createElement("h2");
+		h2Menu.classList.add("section-heading");
 		h2Menu.textContent = "MENU";
 
 		// FIRST MENU
 
 		const menuClassic = document.createElement("div");
-		const h3Classic = document.createElement("h3");
+		menuClassic.classList.add("menu-classic", "menu");
 		const rollsContainer = document.createElement("div");
-
+		const h3Classic = document.createElement("h3");
+		h3Classic.classList.add("menu-heading");
 		h3Classic.textContent = "CLASSIC ROLLS";
 
 		const ulClassic = document.createElement("ul");
+		ulClassic.classList.add("menu-list");
+
+		//ITEM 1
 
 		const liClassicItem1 = document.createElement("li");
-
-		const imgClassicItem1 = document.createElement("img");
-		imgClassicItem1.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liClassicItem1.classList.add("menu-item");
+		const imgClassicItem1 = new Image();
+		imgClassicItem1.src = Cheese;
 		const h4ClassicItem1 = document.createElement("p");
-		h4ClassicItem1.textContent = "QUESO ROLL";
+		h4ClassicItem1.textContent = "CHEESE ROLL";
 		const pClassicItem1 = document.createElement("p");
 		pClassicItem1.textContent = "$4.00";
 
@@ -30,10 +51,9 @@ const Menu = (() => {
 		// ITEM 2
 
 		const liClassicItem2 = document.createElement("li");
-
-		const imgClassicItem2 = document.createElement("img");
-		imgClassicItem2.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liClassicItem2.classList.add("menu-item");
+		const imgClassicItem2 = new Image();
+		imgClassicItem2.src = Kiuri;
 		const h4ClassicItem2 = document.createElement("p");
 		h4ClassicItem2.textContent = "KIURI ROLL";
 		const pClassicItem2 = document.createElement("p");
@@ -44,28 +64,26 @@ const Menu = (() => {
 		//ITEM 3
 
 		const liClassicItem3 = document.createElement("li");
-
-		const imgClassicItem3 = document.createElement("img");
-		imgClassicItem3.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liClassicItem3.classList.add("menu-item");
+		const imgClassicItem3 = new Image();
+		imgClassicItem3.src = Philadelphia;
 		const h4ClassicItem3 = document.createElement("p");
 		h4ClassicItem3.textContent = "PHILADELPHIA ROLL";
 		const pClassicItem3 = document.createElement("p");
-		pClassicItem3.textContent = "$4.00";
+		pClassicItem3.textContent = "$5.00";
 
 		liClassicItem3.append(imgClassicItem3, h4ClassicItem3, pClassicItem3);
 
 		//ITEM 4
 
 		const liClassicItem4 = document.createElement("li");
-
-		const imgClassicItem4 = document.createElement("img");
-		imgClassicItem4.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liClassicItem4.classList.add("menu-item");
+		const imgClassicItem4 = new Image();
+		imgClassicItem4.src = Avocado;
 		const h4ClassicItem4 = document.createElement("p");
 		h4ClassicItem4.textContent = "AVOCADO ROLL";
 		const pClassicItem4 = document.createElement("p");
-		pClassicItem4.textContent = "$4.00";
+		pClassicItem4.textContent = "$5.00";
 
 		liClassicItem4.append(imgClassicItem4, h4ClassicItem4, pClassicItem4);
 
@@ -83,16 +101,21 @@ const Menu = (() => {
 		// SECOND MENU
 
 		const menuCalifornia = document.createElement("div");
+		menuCalifornia.classList.add("menu-california", "menu");
 		const h3California = document.createElement("h3");
+		h3California.classList.add("menu-heading");
+
 		h3California.textContent = "CALIFORNIA ROLLS";
 
 		const ulCalifornia = document.createElement("ul");
+		ulCalifornia.classList.add("menu-list");
+
+		// ITEM 1
 
 		const liCaliforniaItem1 = document.createElement("li");
-
-		const imgCaliforniaItem1 = document.createElement("img");
-		imgCaliforniaItem1.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liCaliforniaItem1.classList.add("menu-item");
+		const imgCaliforniaItem1 = new Image();
+		imgCaliforniaItem1.src = BabyCali;
 		const h4CaliforniaItem1 = document.createElement("p");
 		h4CaliforniaItem1.textContent = "BABY CALIFORNIA ROLL";
 		const pCaliforniaItem1 = document.createElement("p");
@@ -104,13 +127,12 @@ const Menu = (() => {
 			pCaliforniaItem1
 		);
 
-		// ITEM 1
+		// ITEM 2
 
 		const liCaliforniaItem2 = document.createElement("li");
-
-		const imgCaliforniaItem2 = document.createElement("img");
-		imgCaliforniaItem2.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liCaliforniaItem2.classList.add("menu-item");
+		const imgCaliforniaItem2 = new Image();
+		imgCaliforniaItem2.src = SuperCali;
 		const h4CaliforniaItem2 = document.createElement("p");
 		h4CaliforniaItem2.textContent = "SUPER CALIFORNIA ROLL";
 		const pCaliforniaItem2 = document.createElement("p");
@@ -125,14 +147,14 @@ const Menu = (() => {
 		//ITEM 3
 
 		const liCaliforniaItem3 = document.createElement("li");
+		liCaliforniaItem3.classList.add("menu-item");
 
-		const imgCaliforniaItem3 = document.createElement("img");
-		imgCaliforniaItem3.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgCaliforniaItem3 = new Image();
+		imgCaliforniaItem3.src = ThaiCali;
 		const h4CaliforniaItem3 = document.createElement("p");
 		h4CaliforniaItem3.textContent = "THAI CALIFORNIA ROLL";
 		const pCaliforniaItem3 = document.createElement("p");
-		pCaliforniaItem3.textContent = "$4.00";
+		pCaliforniaItem3.textContent = "$4.50";
 
 		liCaliforniaItem3.append(
 			imgCaliforniaItem3,
@@ -143,14 +165,14 @@ const Menu = (() => {
 		//ITEM 4
 
 		const liCaliforniaItem4 = document.createElement("li");
+		liCaliforniaItem4.classList.add("menu-item");
 
-		const imgCaliforniaItem4 = document.createElement("img");
-		imgCaliforniaItem4.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgCaliforniaItem4 = new Image();
+		imgCaliforniaItem4.src = CaliSpecial;
 		const h4CaliforniaItem4 = document.createElement("p");
 		h4CaliforniaItem4.textContent = "CALIFORNIA SPECIAL ROLL";
 		const pCaliforniaItem4 = document.createElement("p");
-		pCaliforniaItem4.textContent = "$4.00";
+		pCaliforniaItem4.textContent = "$6.00";
 
 		liCaliforniaItem4.append(
 			imgCaliforniaItem4,
@@ -172,16 +194,19 @@ const Menu = (() => {
 		// THIRD MENU
 
 		const menuChipotle = document.createElement("div");
+		menuChipotle.classList.add("menu", "menu-chipotle");
 		const h3Chipotle = document.createElement("h3");
+		h3Chipotle.classList.add("menu-heading");
+
 		h3Chipotle.textContent = "CHIPOTLE ROLLS";
 
 		const ulChipotle = document.createElement("ul");
-
+		ulChipotle.classList.add("menu-list");
 		const liChipotleItem1 = document.createElement("li");
+		liChipotleItem1.classList.add("menu-item");
 
-		const imgChipotleItem1 = document.createElement("img");
-		imgChipotleItem1.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgChipotleItem1 = new Image();
+		imgChipotleItem1.src = Mango;
 		const h4ChipotleItem1 = document.createElement("p");
 		h4ChipotleItem1.textContent = "MANGO ROLL";
 		const pChipotleItem1 = document.createElement("p");
@@ -192,24 +217,24 @@ const Menu = (() => {
 		// ITEM 1
 
 		const liChipotleItem2 = document.createElement("li");
+		liChipotleItem2.classList.add("menu-item");
 
-		const imgChipotleItem2 = document.createElement("img");
-		imgChipotleItem2.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgChipotleItem2 = new Image();
+		imgChipotleItem2.src = Godzilla;
 		const h4ChipotleItem2 = document.createElement("p");
 		h4ChipotleItem2.textContent = "GODZILLA ROLL";
 		const pChipotleItem2 = document.createElement("p");
-		pChipotleItem2.textContent = "$4.00";
+		pChipotleItem2.textContent = "$5.00";
 
 		liChipotleItem2.append(imgChipotleItem2, h4ChipotleItem2, pChipotleItem2);
 
 		//ITEM 3
 
 		const liChipotleItem3 = document.createElement("li");
+		liChipotleItem3.classList.add("menu-item");
 
-		const imgChipotleItem3 = document.createElement("img");
-		imgChipotleItem3.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgChipotleItem3 = new Image();
+		imgChipotleItem3.src = Volcan;
 		const h4ChipotleItem3 = document.createElement("p");
 		h4ChipotleItem3.textContent = "VOLCAN ROLL";
 		const pChipotleItem3 = document.createElement("p");
@@ -220,10 +245,10 @@ const Menu = (() => {
 		//ITEM 4
 
 		const liChipotleItem4 = document.createElement("li");
+		liChipotleItem4.classList.add("menu-item");
 
-		const imgChipotleItem4 = document.createElement("img");
-		imgChipotleItem4.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgChipotleItem4 = new Image();
+		imgChipotleItem4.src = Spicy;
 		const h4ChipotleItem4 = document.createElement("p");
 		h4ChipotleItem4.textContent = "SPICY ROLL";
 		const pChipotleItem4 = document.createElement("p");
@@ -245,16 +270,17 @@ const Menu = (() => {
 		// FOURTH MENU
 
 		const menuTampico = document.createElement("div");
+		menuTampico.classList.add("menu-tampico", "menu");
 		const h3Tampico = document.createElement("h3");
+		h3Tampico.classList.add("menu-heading");
 		h3Tampico.textContent = "TAMPICO ROLLS";
 
 		const ulTampico = document.createElement("ul");
-
+		ulTampico.classList.add("menu-list");
 		const liTampicoItem1 = document.createElement("li");
-
-		const imgTampicoItem1 = document.createElement("img");
-		imgTampicoItem1.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		liTampicoItem1.classList.add("menu-item");
+		const imgTampicoItem1 = new Image();
+		imgTampicoItem1.src = Banana;
 		const h4TampicoItem1 = document.createElement("p");
 		h4TampicoItem1.textContent = "BANANA ROLL";
 		const pTampicoItem1 = document.createElement("p");
@@ -265,10 +291,10 @@ const Menu = (() => {
 		// ITEM 1
 
 		const liTampicoItem2 = document.createElement("li");
+		liTampicoItem2.classList.add("menu-item");
 
-		const imgTampicoItem2 = document.createElement("img");
-		imgTampicoItem2.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgTampicoItem2 = new Image();
+		imgTampicoItem2.src = Tsunami;
 		const h4TampicoItem2 = document.createElement("p");
 		h4TampicoItem2.textContent = "TSUNAMI ROLL";
 		const pTampicoItem2 = document.createElement("p");
@@ -279,10 +305,10 @@ const Menu = (() => {
 		//ITEM 3
 
 		const liTampicoItem3 = document.createElement("li");
+		liTampicoItem3.classList.add("menu-item");
 
-		const imgTampicoItem3 = document.createElement("img");
-		imgTampicoItem3.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgTampicoItem3 = new Image();
+		imgTampicoItem3.src = Geisha;
 		const h4TampicoItem3 = document.createElement("p");
 		h4TampicoItem3.textContent = "GEISHA ROLL";
 		const pTampicoItem3 = document.createElement("p");
@@ -293,10 +319,10 @@ const Menu = (() => {
 		//ITEM 4
 
 		const liTampicoItem4 = document.createElement("li");
+		liTampicoItem4.classList.add("menu-item");
 
-		const imgTampicoItem4 = document.createElement("img");
-		imgTampicoItem4.src =
-			"https://pbs.twimg.com/profile_images/1527227108673605632/JeNystpr_normal.jpg";
+		const imgTampicoItem4 = new Image();
+		imgTampicoItem4.src = Tigre;
 		const h4TampicoItem4 = document.createElement("p");
 		h4TampicoItem4.textContent = "TIGRE ROLL";
 		const pTampicoItem4 = document.createElement("p");
