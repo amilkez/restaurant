@@ -37,9 +37,24 @@ function switchPage(e) {
 		mainContent.classList.add("home");
 		mainContent.appendChild(Homepage.cta());
 	} else if (tab.className.includes("menu")) {
+		button =
+			document.querySelector(".bottom").previousSibling.lastChild.lastChild;
 		mainContent.innerHTML = "";
 		mainContent.classList.remove("contact", "home", "about");
 		mainContent.classList.add("menu");
 		mainContent.appendChild(Menu.createDiv());
 	}
 }
+
+let button = document.querySelector(".bottom").previousSibling.lastChild;
+
+button.addEventListener("click", () => {
+	const mainContent = document.querySelector(".bottom").previousSibling;
+
+	if (button) {
+		mainContent.innerHTML = "";
+		mainContent.classList.remove("contact", "home", "about");
+		mainContent.classList.add("menu");
+		mainContent.appendChild(Menu.createDiv());
+	}
+});
